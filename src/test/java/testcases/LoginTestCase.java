@@ -15,6 +15,7 @@ public class LoginTestCase extends BaseTestClass {
 		login.enterUsername(uname);
 		login.enterPassword(pwd);
 		login.clickSubmit();
+		System.out.println("clicked loggin button123");
 		HomePage hp= new HomePage(driver);
 	boolean status1=hp.checkloginstatusText();
 		if(exp.equalsIgnoreCase("Valid"))
